@@ -109,6 +109,24 @@
   .spin{flex:0 0 26px;height:26px;border-radius:50%;border:3px solid rgba(154,156,234,.3);border-top-color:var(--violet);animation:spin 1s linear infinite;margin-top:2px}
   @keyframes spin{to{transform:rotate(360deg)}}
 
+
+  /* Direcciones: formato por campos, tocar para copiar */
+  .oblig{display:flex;gap:12px;align-items:center;margin-top:12px;padding:12px 14px;border-radius:16px;background:var(--mint);color:var(--night);font-size:13px;line-height:1.4;font-weight:600}
+  .oblig strong{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;padding-right:12px;border-right:1px solid rgba(31,29,74,.25);white-space:nowrap}
+  .oblig em{font-style:normal;font-weight:800}
+  .dir .fields{margin-top:10px;display:flex;flex-direction:column}
+  .fr{all:unset;box-sizing:border-box;display:grid;grid-template-columns:104px 1fr 18px;gap:8px;align-items:center;padding:9px 6px;border-top:1px solid rgba(255,255,255,.12);cursor:pointer;border-radius:8px;transition:background .15s}
+  .fr:first-child{border-top:0}
+  .fr:hover{background:rgba(255,255,255,.07)}
+  .fr:focus-visible{outline:2px solid var(--mint);outline-offset:1px}
+  .fr dt,.fr .k{font-size:11px;color:rgba(255,255,255,.66);font-weight:600;letter-spacing:.02em}
+  .fr .v{font-size:14px;font-weight:700;letter-spacing:.01em;word-break:break-word}
+  .fr .v.hl{color:var(--mint)}
+  .fr .c{width:15px;height:15px;opacity:.45;transition:opacity .15s}
+  .fr:hover .c{opacity:.9}
+  .fr.ok .c{opacity:1;color:#4ADE80}
+  .fr.ok{background:rgba(34,197,94,.18)}
+  .dir .nota{font-size:11px;color:rgba(255,255,255,.62);margin-top:8px;text-align:center}
   /* Direcciones de casillero */
   .dir-box{margin-top:14px;padding:16px;border-radius:20px;background:radial-gradient(120% 100% at 0% 0%,#4C49B8 0%,var(--night2) 45%,var(--night) 100%);color:#fff;box-shadow:0 18px 34px -18px rgba(31,29,74,.8)}
   .dir-box h3{font-size:15px;font-weight:800;display:flex;align-items:center;gap:8px}
@@ -245,24 +263,38 @@
 
   </div>
 
+  <section class="sec full" id="agencia">
+    <div class="sec-h"><span class="dot" style="background:#fff;box-shadow:0 6px 14px -8px rgba(122,120,214,.7)"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAMAAABjCgsuAAAASFBMVEVgUphnYHVoTopnT4lnUYcAAP99HX9mVn5sOaP/AP8+Pn1mVn4A/wBsPZ4/P78AfwAAf39/AP+qVar///8AAABoVIRpR5JpR5TKBDSqAAAAGHRSTlMPE2eWzwEDWRMBBIoBTAQCAgIDAQDxLk5C8vqGAAACC0lEQVR42o2Ui5LkIAhFAR+J9rx2luj//+leJA+z3TU1VHVXohwDXJDUjZkYf/5zS0QZr2+2Z+80NmjfzbyEaPY4AaYmIgEmWMqp0QzY4wYLrJNRDyGOpfStvWmdgEQaACzzEX+UAIgvtfGhaZuKAUjiAjK8HODWLbROM6BPAGvfgYx8ALTfANseEoV+T/olIDHuQEbSVucfAZqAooR4Ov0IrHwBqhU7vV1lTQDiDHBRnQH4XEDCcXQDyHUDcEqTr5AKCt3WC4CK6AwUMk4AsoDY5Ofb4xWSuQt6AhZN/Ho0SkvJ4QYJqwUcAWCJJG5RemPZLgD+bx7qXzu+kAPwN7cg46hwAmiO5rkVCycdRYcb3EebMWcHLAxqzatBpqDyoZIox+E+piIfDWx2ytVE91EK0cQzdyp7HcP2wByhgl+nvoRgi5dKiAOyPoqScsKH1vV9ktdik+Ox2swdwpU8duEuPd+HUKwrRmsuCJiYU877Wb1DDbRGnYEWrFolcR4zzfp5OkuH+FuUuR+Rag99hMg2UosJ1+ALb6pD/CjzmOO54jLprSFcs93Z0/xIpuX/gH/fzG4hQ30/l9sATcAoal6JfIDGW36auPkLuNX0aBwuucwjur0ETlnRBzzVsI6OF64vAdVoV6XezID70jmuaAvTAeedtzeTLy3MzwCzPJZFFvwfu8TiFpYJ+AegqVWvk6DaIQAAAABJRU5ErkJggg==" alt="" width="20" style="display:block"></span><h2>Hebeluna Business Solutions</h2></div>
+    <nav class="links">
+      <a class="btn" href="https://hebeluna-business-solutions.vercel.app" target="_blank" rel="noopener">
+        <span class="ic" style="background:#fff;box-shadow:0 8px 16px -8px rgba(122,120,214,.7)"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAMAAABjCgsuAAAASFBMVEVgUphnYHVoTopnT4lnUYcAAP99HX9mVn5sOaP/AP8+Pn1mVn4A/wBsPZ4/P78AfwAAf39/AP+qVar///8AAABoVIRpR5JpR5TKBDSqAAAAGHRSTlMPE2eWzwEDWRMBBIoBTAQCAgIDAQDxLk5C8vqGAAACC0lEQVR42o2Ui5LkIAhFAR+J9rx2luj//+leJA+z3TU1VHVXohwDXJDUjZkYf/5zS0QZr2+2Z+80NmjfzbyEaPY4AaYmIgEmWMqp0QzY4wYLrJNRDyGOpfStvWmdgEQaACzzEX+UAIgvtfGhaZuKAUjiAjK8HODWLbROM6BPAGvfgYx8ALTfANseEoV+T/olIDHuQEbSVucfAZqAooR4Ov0IrHwBqhU7vV1lTQDiDHBRnQH4XEDCcXQDyHUDcEqTr5AKCt3WC4CK6AwUMk4AsoDY5Ofb4xWSuQt6AhZN/Ho0SkvJ4QYJqwUcAWCJJG5RemPZLgD+bx7qXzu+kAPwN7cg46hwAmiO5rkVCycdRYcb3EebMWcHLAxqzatBpqDyoZIox+E+piIfDWx2ytVE91EK0cQzdyp7HcP2wByhgl+nvoRgi5dKiAOyPoqScsKH1vV9ktdik+Ox2swdwpU8duEuPd+HUKwrRmsuCJiYU877Wb1DDbRGnYEWrFolcR4zzfp5OkuH+FuUuR+Rag99hMg2UosJ1+ALb6pD/CjzmOO54jLprSFcs93Z0/xIpuX/gH/fzG4hQ30/l9sATcAoal6JfIDGW36auPkLuNX0aBwuucwjur0ETlnRBzzVsI6OF64vAdVoV6XezID70jmuaAvTAeedtzeTLy3MzwCzPJZFFvwfu8TiFpYJ+AegqVWvk6DaIQAAAABJRU5ErkJggg==" alt="" width="30" style="display:block;max-width:30px;height:auto"></span>
+        <span class="t"><b>Hebeluna Business Solutions</b><span>Nuestra agencia: marketing, ventas y sistemas</span></span>
+        <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+  </section>
+
   <section class="sec full">
     <div class="dir-box" id="direcciones">
-      <h3>📦 Tus direcciones en Miami</h3>
+      <h3>Tus direcciones en Miami</h3>
       <p class="d">Usalas como dirección de envío cuando comprés en Amazon, Shein, Temu o cualquier tienda de EE. UU.</p>
+      <div class="oblig" role="note"><strong>Obligatorio</strong><span><em>NI31149</em> debe ir de primero en tu nombre, para evitar contratiempos con tu paquete.</span></div>
       <div class="nombre">
         <label for="nombre">Escribí tu nombre y la dirección se completa sola</label>
         <input id="nombre" type="text" autocomplete="name" placeholder="Ej.: María López" maxlength="40">
       </div>
       <div class="dirs">
-        <div class="dir">
-          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg> Aérea</span><span class="tiempo">3 a 5 días</span>
-          <address id="dir-aerea">Hebeluna <span class="nm">TU NOMBRE</span><br>8534 NW 70th St<br>NI31149<br>Miami, Florida 33195</address>
-          <button class="copiar" type="button" data-dir="dir-aerea"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copiar dirección aérea</span></button>
+        <div class="dir" id="dir-aerea">
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>Carga aérea</span>
+          <div class="fields"><button class="fr" type="button" data-nm="1"><span class="k">Nombre completo</span><span class="v"><span class="hl">NI31149</span> <span class="nm">TU NOMBRE</span></span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="8534 NW 70TH ST"><span class="k">Address Line 1</span><span class="v">8534 NW 70TH ST</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="HEBELUNA"><span class="k">Address Line 2</span><span class="v">HEBELUNA</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="Miami"><span class="k">City</span><span class="v">Miami</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="Florida"><span class="k">State, province, region</span><span class="v">Florida</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="33195"><span class="k">ZIP</span><span class="v">33195</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="United States"><span class="k">Country</span><span class="v">United States</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="+1 (786) 441-9542"><span class="k">Número telefónico</span><span class="v">+1 (786) 441-9542</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></div>
+          <button class="copiar" type="button" data-all="dir-aerea"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copiar dirección completa</span></button>
+          <p class="nota">También podés tocar cada campo para copiarlo solo.</p>
         </div>
-        <div class="dir">
-          <span class="tag mar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.4 17.5 21 12l-9-4-9 4 1.8 5.5"/><path d="M12 8V3M8 5h8"/></svg> Marítima</span><span class="tiempo">22 días hábiles</span>
-          <address id="dir-maritima">Hebeluna <span class="nm">TU NOMBRE</span><br>8538 NW 70th St<br>Suite NI31149<br>Miami, FL 33166</address>
-          <button class="copiar" type="button" data-dir="dir-maritima"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copiar dirección marítima</span></button>
+        <div class="dir" id="dir-maritima">
+          <span class="tag mar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.4 17.5 21 12l-9-4-9 4 1.8 5.5"/><path d="M12 8V3M8 5h8"/></svg>Carga marítima</span>
+          <div class="fields"><button class="fr" type="button" data-nm="1"><span class="k">Nombre completo</span><span class="v"><span class="hl">NI31149</span> <span class="nm">TU NOMBRE</span></span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="8538 NW 70TH ST"><span class="k">Address Line 1</span><span class="v">8538 NW 70TH ST</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="HEBELUNA"><span class="k">Address Line 2</span><span class="v">HEBELUNA</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="Miami"><span class="k">City</span><span class="v">Miami</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="Florida"><span class="k">State, province, region</span><span class="v">Florida</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="33166"><span class="k">ZIP</span><span class="v">33166</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="United States"><span class="k">Country</span><span class="v">United States</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button><button class="fr" type="button" data-v="+1 (786) 441-9542"><span class="k">Número telefónico</span><span class="v">+1 (786) 441-9542</span><svg class="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></div>
+          <button class="copiar" type="button" data-all="dir-maritima"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copiar dirección completa</span></button>
+          <p class="nota">También podés tocar cada campo para copiarlo solo.</p>
         </div>
       </div>
     </div>
@@ -279,8 +311,9 @@
 (function () {
   var input = document.getElementById('nombre');
   var marcas = document.querySelectorAll('.dir .nm');
-  function nombre() { var v = (input.value || '').trim().replace(/\s+/g, ' '); return v ? v.toUpperCase() : 'TU NOMBRE'; }
-  input.addEventListener('input', function () { var n = nombre(); marcas.forEach(function (m) { m.textContent = n; }); });
+  function nombre() { var v = (input.value || '').trim().replace(/\s+/g, ' '); return v ? v.toUpperCase() : ''; }
+  function valorNombre() { var n = nombre(); return 'NI31149' + (n ? ' ' + n : ''); }
+  input.addEventListener('input', function () { var n = nombre(); marcas.forEach(function (m) { m.textContent = n || 'TU NOMBRE'; }); });
   function copiarTexto(t) {
     if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t);
     return new Promise(function (ok, mal) {
@@ -288,15 +321,29 @@
       document.body.appendChild(a); a.select(); try { document.execCommand('copy') ? ok() : mal(); } catch (e) { mal(e); } document.body.removeChild(a);
     });
   }
+  function pedirNombre() { input.focus(); input.placeholder = 'Primero escribí tu nombre aquí'; input.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+  document.querySelectorAll('.fr').forEach(function (r) {
+    r.addEventListener('click', function () {
+      var esNombre = r.hasAttribute('data-nm');
+      if (esNombre && !nombre()) { pedirNombre(); return; }
+      var t = esNombre ? valorNombre() : r.getAttribute('data-v');
+      copiarTexto(t).then(function () { r.classList.add('ok'); setTimeout(function () { r.classList.remove('ok'); }, 1400); }).catch(function () {});
+    });
+  });
   document.querySelectorAll('.copiar').forEach(function (b) {
     var etiqueta = b.querySelector('span'), original = etiqueta.textContent;
     b.addEventListener('click', function () {
-      if (nombre() === 'TU NOMBRE') { input.focus(); input.placeholder = 'Primero escribí tu nombre aquí'; return; }
-      var texto = document.getElementById(b.dataset.dir).innerText.trim();
-      copiarTexto(texto).then(function () {
+      if (!nombre()) { pedirNombre(); return; }
+      var card = document.getElementById(b.getAttribute('data-all'));
+      var lineas = [];
+      card.querySelectorAll('.fr').forEach(function (r) {
+        var k = r.querySelector('.k').textContent;
+        lineas.push(k + ': ' + (r.hasAttribute('data-nm') ? valorNombre() : r.getAttribute('data-v')));
+      });
+      copiarTexto(lineas.join('\n')).then(function () {
         b.classList.add('ok'); etiqueta.textContent = '¡Copiada! Pegala en tu tienda';
         setTimeout(function () { b.classList.remove('ok'); etiqueta.textContent = original; }, 2500);
-      }).catch(function () { etiqueta.textContent = 'Mantené presionada la dirección para copiarla'; });
+      }).catch(function () { etiqueta.textContent = 'No se pudo copiar; tocá cada campo'; });
     });
   });
 })();
